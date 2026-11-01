@@ -10,3 +10,6 @@ The answer for each date is deterministic (`src/game.js`), so there is no daily 
 - Plus unlocks `/archive` via a signed cookie set after checkout, or the `/unlock/<token>` link in the welcome email.
 ## Hard limits
 No ads until 1,000 daily players and Davian's approval. No spending, no cold outreach, no pricing/legal changes.
+
+## Deploys
+Pushes to `main` should deploy automatically. If no new Railway deployment appears within 5 minutes, reconnect the service source (Railway `connect-service-source`, same repo and branch) to trigger it, then confirm `/healthz`.
